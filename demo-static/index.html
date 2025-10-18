@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Hibernate Demo - Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        nav a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        nav a i {
+            margin-right: 8px;
+        }
+
+        /* Content */
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .welcome-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .feature-card i {
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 12px 30px;
+            font-size: 1em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(240, 147, 251, 0.5);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+
+        .stat-card .number {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-card .label {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Tech Stack */
+        .tech-stack {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .tech-stack h3 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tech-badge {
+            background: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+            color: #667eea;
+            border: 2px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .welcome-section h2 {
+                font-size: 1.8em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-rocket"></i> Spring Hibernate Demo</h1>
+            <p>Application moderne de gestion de produits et catégories</p>
+        </header>
+
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            <a href="products.html"><i class="fas fa-box"></i> Produits</a>
+            <a href="categories.html"><i class="fas fa-folder"></i> Catégories</a>
+        </nav>
+
+        <div class="content">
+            <div class="welcome-section">
+                <h2>🎉 Bienvenue dans l'Application</h2>
+                <p>
+                    Découvrez une application web moderne développée avec <strong>Spring Framework</strong>, 
+                    <strong>Hibernate ORM</strong> et <strong>Thymeleaf</strong>. 
+                    Gérez vos produits et catégories avec une interface intuitive et performante.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="number">15+</div>
+                    <div class="label">Produits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">4</div>
+                    <div class="label">Catégories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">10</div>
+                    <div class="label">Tests Réussis</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">100%</div>
+                    <div class="label">Success Rate</div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; font-size: 2em; color: #333; margin: 50px 0 30px;">✨ Fonctionnalités</h3>
+
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Gestion des Produits</h3>
+                    <p>Créez, modifiez et supprimez des produits. Associez-les à des catégories pour une meilleure organisation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Gestion des Catégories</h3>
+                    <p>Organisez vos produits par catégories. Créez des hiérarchies pour une structure optimale.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Relations JPA</h3>
+                    <p>Profitez des relations ManyToOne et OneToMany entre produits et catégories.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Persistance Hibernate</h3>
+                    <p>Stockage sécurisé avec Hibernate ORM et MySQL. Transactions automatiques.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Tests Complets</h3>
+                    <p>10 tests unitaires et d'intégration avec JUnit 5 et Mockito. 100% de réussite.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Interface Moderne</h3>
+                    <p>Design responsive et élégant avec Thymeleaf et CSS3. Expérience utilisateur optimale.</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="products.html" class="btn-large btn-primary">
+                    <i class="fas fa-box"></i> Voir les Produits
+                </a>
+                <a href="categories.html" class="btn-large btn-secondary">
+                    <i class="fas fa-folder"></i> Voir les Catégories
+                </a>
+            </div>
+
+            <div class="tech-stack">
+                <h3>🛠 Technologies Utilisées</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge">Java 17</span>
+                    <span class="tech-badge">Spring 5.3</span>
+                    <span class="tech-badge">Hibernate 5.6</span>
+                    <span class="tech-badge">MySQL 8.0</span>
+                    <span class="tech-badge">Thymeleaf</span>
+                    <span class="tech-badge">JUnit 5</span>
+                    <span class="tech-badge">Mockito</span>
+                    <span class="tech-badge">Maven</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
