@@ -1,0 +1,127 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#8e44ad"/>
+  <text x="30" y="45" font-family="Arial" font-size="18" fill="white" font-weight="bold">📁 Gestion des Catégories</text>
+  
+  <!-- Navigation -->
+  <rect x="30" y="100" width="100" height="40" fill="#ecf0f1" rx="5"/>
+  <text x="80" y="123" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Accueil</text>
+  
+  <rect x="140" y="100" width="100" height="40" fill="#ecf0f1" rx="5"/>
+  <text x="190" y="123" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Produits</text>
+  
+  <rect x="250" y="100" width="100" height="40" fill="#8e44ad" rx="5"/>
+  <text x="300" y="123" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Catégories</text>
+  
+  <!-- Main content -->
+  <rect x="30" y="160" width="1140" height="500" fill="white" rx="10" opacity="0.95"/>
+  
+  <!-- Title -->
+  <text x="50" y="200" font-family="Arial" font-size="20" fill="#2c3e50" font-weight="bold">Toutes les Catégories</text>
+  
+  <!-- Add button -->
+  <rect x="950" y="170" width="150" height="40" fill="#27ae60" rx="5"/>
+  <text x="1025" y="193" font-family="Arial" font-size="14" fill="white" text-anchor="middle">+ Nouvelle Catégorie</text>
+  
+  <!-- Category cards -->
+  <!-- Card 1 - Électronique -->
+  <rect x="50" y="230" width="300" height="200" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="70" y="260" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">💻 Électronique</text>
+  <text x="70" y="280" font-family="Arial" font-size="12" fill="#666">Découvrez notre gamme complète d'appareils électroniques:</text>
+  <text x="70" y="295" font-family="Arial" font-size="12" fill="#666">ordinateurs, smartphones, tablettes et accessoires high-tech.</text>
+  
+  <!-- Stats -->
+  <rect x="70" y="310" width="80" height="25" fill="#3498db" rx="5"/>
+  <text x="110" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">12 Produits</text>
+  
+  <rect x="160" y="310" width="80" height="25" fill="#f39c12" rx="5"/>
+  <text x="200" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">4.8 Note</text>
+  
+  <!-- Action buttons -->
+  <rect x="70" y="350" width="60" height="30" fill="#3498db" rx="5"/>
+  <text x="100" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Voir</text>
+  
+  <rect x="140" y="350" width="70" height="30" fill="#f39c12" rx="5"/>
+  <text x="175" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  
+  <rect x="220" y="350" width="70" height="30" fill="#e74c3c" rx="5"/>
+  <text x="255" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 2 - Vêtements -->
+  <rect x="370" y="230" width="300" height="200" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="390" y="260" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">👕 Vêtements</text>
+  <text x="390" y="280" font-family="Arial" font-size="12" fill="#666">Collection de vêtements et accessoires pour toute la famille.</text>
+  <text x="390" y="295" font-family="Arial" font-size="12" fill="#666">Mode tendance et qualité au meilleur prix.</text>
+  
+  <!-- Stats -->
+  <rect x="390" y="310" width="80" height="25" fill="#e91e63" rx="5"/>
+  <text x="430" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">8 Produits</text>
+  
+  <rect x="480" y="310" width="80" height="25" fill="#f39c12" rx="5"/>
+  <text x="520" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">4.6 Note</text>
+  
+  <!-- Action buttons -->
+  <rect x="390" y="350" width="60" height="30" fill="#3498db" rx="5"/>
+  <text x="420" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Voir</text>
+  
+  <rect x="460" y="350" width="70" height="30" fill="#f39c12" rx="5"/>
+  <text x="495" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  
+  <rect x="540" y="350" width="70" height="30" fill="#e74c3c" rx="5"/>
+  <text x="575" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 3 - Maison & Déco -->
+  <rect x="690" y="230" width="300" height="200" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="710" y="260" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">🏠 Maison & Déco</text>
+  <text x="710" y="280" font-family="Arial" font-size="12" fill="#666">Tout pour embellir votre intérieur: meubles, décoration,</text>
+  <text x="710" y="295" font-family="Arial" font-size="12" fill="#666">électroménager et articles de maison.</text>
+  
+  <!-- Stats -->
+  <rect x="710" y="310" width="80" height="25" fill="#27ae60" rx="5"/>
+  <text x="750" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">15 Produits</text>
+  
+  <rect x="800" y="310" width="80" height="25" fill="#f39c12" rx="5"/>
+  <text x="840" y="325" font-family="Arial" font-size="11" fill="white" text-anchor="middle">4.9 Note</text>
+  
+  <!-- Action buttons -->
+  <rect x="710" y="350" width="60" height="30" fill="#3498db" rx="5"/>
+  <text x="740" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Voir</text>
+  
+  <rect x="780" y="350" width="70" height="30" fill="#f39c12" rx="5"/>
+  <text x="815" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  
+  <rect x="860" y="350" width="70" height="30" fill="#e74c3c" rx="5"/>
+  <text x="895" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 4 - Sport & Fitness -->
+  <rect x="50" y="450" width="300" height="200" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="70" y="480" font-family="Arial" font-size="18" fill="#2c3e50" font-weight="bold">🏋️ Sport & Fitness</text>
+  <text x="70" y="500" font-family="Arial" font-size="12" fill="#666">Équipements sportifs, vêtements de sport et accessoires</text>
+  <text x="70" y="515" font-family="Arial" font-size="12" fill="#666">fitness pour tous les niveaux.</text>
+  
+  <!-- Stats -->
+  <rect x="70" y="530" width="80" height="25" fill="#e74c3c" rx="5"/>
+  <text x="110" y="545" font-family="Arial" font-size="11" fill="white" text-anchor="middle">10 Produits</text>
+  
+  <rect x="160" y="530" width="80" height="25" fill="#f39c12" rx="5"/>
+  <text x="200" y="545" font-family="Arial" font-size="11" fill="white" text-anchor="middle">4.7 Note</text>
+  
+  <!-- Action buttons -->
+  <rect x="70" y="570" width="60" height="30" fill="#3498db" rx="5"/>
+  <text x="100" y="588" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Voir</text>
+  
+  <rect x="140" y="570" width="70" height="30" fill="#f39c12" rx="5"/>
+  <text x="175" y="588" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  
+  <rect x="220" y="570" width="70" height="30" fill="#e74c3c" rx="5"/>
+  <text x="255" y="588" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+</svg>

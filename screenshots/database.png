@@ -1,0 +1,71 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Browser header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#2c3e50"/>
+  <rect x="0" y="60" width="1200" height="40" fill="#34495e"/>
+  
+  <!-- Address bar -->
+  <rect x="20" y="70" width="800" height="20" fill="white" rx="3"/>
+  <text x="30" y="82" font-family="Arial" font-size="12" fill="#666">localhost/phpmyadmin/index.php?route=/sql&pos=0&db=base&table=product</text>
+  
+  <!-- Page title -->
+  <text x="20" y="45" font-family="Arial" font-size="14" fill="white">PMA localhost/127.0.0.1 / base / product | phpMyAdmin 5.2.1</text>
+  
+  <!-- Navigation breadcrumb -->
+  <text x="20" y="110" font-family="Arial" font-size="12" fill="#666">Serveur: 127.0.0.1 > Base de données: base » Table: product</text>
+  
+  <!-- Tabs -->
+  <rect x="20" y="120" width="80" height="30" fill="#3498db" rx="3"/>
+  <text x="40" y="138" font-family="Arial" font-size="12" fill="white">Parcourir</text>
+  
+  <rect x="110" y="120" width="80" height="30" fill="#ecf0f1" rx="3"/>
+  <text x="130" y="138" font-family="Arial" font-size="12" fill="#666">Structure</text>
+  
+  <rect x="200" y="120" width="60" height="30" fill="#ecf0f1" rx="3"/>
+  <text x="220" y="138" font-family="Arial" font-size="12" fill="#666">SQL</text>
+  
+  <!-- Status message -->
+  <rect x="20" y="160" width="1160" height="30" fill="#d4edda" rx="3"/>
+  <text x="30" y="178" font-family="Arial" font-size="12" fill="#155724">✔ Affichage des lignes 0 - 18 (total de 19, traitement en 0,0005 seconde(s).)</text>
+  
+  <!-- SQL query box -->
+  <rect x="20" y="200" width="1160" height="40" fill="#f8f9fa" stroke="#dee2e6" rx="3"/>
+  <text x="30" y="220" font-family="Arial" font-size="12" fill="#495057">SELECT * FROM `product`</text>
+  
+  <!-- Table header -->
+  <rect x="20" y="260" width="1160" height="30" fill="#e9ecef"/>
+  <text x="30" y="278" font-family="Arial" font-size="12" fill="#495057" font-weight="bold">id</text>
+  <text x="100" y="278" font-family="Arial" font-size="12" fill="#495057" font-weight="bold">name</text>
+  <text x="300" y="278" font-family="Arial" font-size="12" fill="#495057" font-weight="bold">price</text>
+  <text x="500" y="278" font-family="Arial" font-size="12" fill="#495057" font-weight="bold">category_id</text>
+  
+  <!-- Sample data rows -->
+  <rect x="20" y="290" width="1160" height="25" fill="white"/>
+  <text x="30" y="305" font-family="Arial" font-size="11" fill="#495057">1</text>
+  <text x="100" y="305" font-family="Arial" font-size="11" fill="#495057">Produit 1</text>
+  <text x="300" y="305" font-family="Arial" font-size="11" fill="#495057">100</text>
+  <text x="500" y="305" font-family="Arial" font-size="11" fill="#495057">NULL</text>
+  
+  <rect x="20" y="315" width="1160" height="25" fill="#f8f9fa"/>
+  <text x="30" y="330" font-family="Arial" font-size="11" fill="#495057">11</text>
+  <text x="100" y="330" font-family="Arial" font-size="11" fill="#495057">Ordinateur portable HP</text>
+  <text x="300" y="330" font-family="Arial" font-size="11" fill="#495057">899.99</text>
+  <text x="500" y="330" font-family="Arial" font-size="11" fill="#495057">1</text>
+  
+  <rect x="20" y="340" width="1160" height="25" fill="white"/>
+  <text x="30" y="355" font-family="Arial" font-size="11" fill="#495057">12</text>
+  <text x="100" y="355" font-family="Arial" font-size="11" fill="#495057">Smartphone Samsung</text>
+  <text x="300" y="355" font-family="Arial" font-size="11" fill="#495057">599.99</text>
+  <text x="500" y="355" font-family="Arial" font-size="11" fill="#495057">1</text>
+  
+  <!-- Left sidebar -->
+  <rect x="0" y="60" width="200" height="740" fill="#2c3e50"/>
+  <text x="20" y="100" font-family="Arial" font-size="14" fill="white" font-weight="bold">phpMyAdmin</text>
+  
+  <!-- Database tree -->
+  <text x="20" y="130" font-family="Arial" font-size="12" fill="#ecf0f1">base</text>
+  <text x="40" y="150" font-family="Arial" font-size="11" fill="#bdc3c7">├─ category</text>
+  <text x="40" y="170" font-family="Arial" font-size="11" fill="#3498db">└─ product</text>
+</svg>

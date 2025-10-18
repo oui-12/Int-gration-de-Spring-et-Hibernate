@@ -1,0 +1,101 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#3498db"/>
+  <text x="30" y="45" font-family="Arial" font-size="18" fill="white" font-weight="bold">⚙️ Gestion des Produits</text>
+  
+  <!-- Navigation -->
+  <rect x="30" y="100" width="100" height="40" fill="#ecf0f1" rx="5"/>
+  <text x="80" y="123" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Accueil</text>
+  
+  <rect x="140" y="100" width="100" height="40" fill="#e91e63" rx="5"/>
+  <text x="190" y="123" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Produits</text>
+  
+  <rect x="250" y="100" width="100" height="40" fill="#ecf0f1" rx="5"/>
+  <text x="300" y="123" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Catégories</text>
+  
+  <!-- Search and Add -->
+  <rect x="30" y="160" width="300" height="40" fill="white" rx="5"/>
+  <text x="40" y="183" font-family="Arial" font-size="14" fill="#666">🔍 Rechercher un produit...</text>
+  
+  <rect x="1000" y="160" width="150" height="40" fill="#27ae60" rx="5"/>
+  <text x="1075" y="183" font-family="Arial" font-size="14" fill="white" text-anchor="middle">+ Nouveau Produit</text>
+  
+  <!-- Products grid -->
+  <rect x="30" y="220" width="1120" height="500" fill="white" rx="10" opacity="0.95"/>
+  
+  <!-- Product cards -->
+  <!-- Card 1 -->
+  <rect x="50" y="250" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="60" y="280" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">💻 Ordinateur Portable HP</text>
+  <text x="60" y="300" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">899.99 €</text>
+  <rect x="60" y="310" width="80" height="20" fill="#3498db" rx="10"/>
+  <text x="100" y="323" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Électronique</text>
+  <rect x="60" y="350" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="100" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="150" y="350" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="190" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 2 -->
+  <rect x="320" y="250" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="330" y="280" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">📱 Smartphone Samsung</text>
+  <text x="330" y="300" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">599.99 €</text>
+  <rect x="330" y="310" width="80" height="20" fill="#3498db" rx="10"/>
+  <text x="370" y="323" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Électronique</text>
+  <rect x="330" y="350" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="370" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="420" y="350" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="460" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 3 -->
+  <rect x="590" y="250" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="600" y="280" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">👕 T-shirt Nike</text>
+  <text x="600" y="300" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">29.99 €</text>
+  <rect x="600" y="310" width="80" height="20" fill="#e91e63" rx="10"/>
+  <text x="640" y="323" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Vêtements</text>
+  <rect x="600" y="350" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="640" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="690" y="350" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="730" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 4 -->
+  <rect x="860" y="250" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="870" y="280" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">🎧 Casque Audio Sony</text>
+  <text x="870" y="300" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">149.99 €</text>
+  <rect x="870" y="310" width="80" height="20" fill="#3498db" rx="10"/>
+  <text x="910" y="323" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Électronique</text>
+  <rect x="870" y="350" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="910" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="960" y="350" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="1000" y="368" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 5 -->
+  <rect x="50" y="450" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="60" y="480" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">👟 Baskets Adidas</text>
+  <text x="60" y="500" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">89.99 €</text>
+  <rect x="60" y="510" width="80" height="20" fill="#e91e63" rx="10"/>
+  <text x="100" y="523" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Vêtements</text>
+  <rect x="60" y="550" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="100" y="568" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="150" y="550" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="190" y="568" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+  
+  <!-- Card 6 -->
+  <rect x="320" y="450" width="250" height="180" fill="white" stroke="#e9ecef" rx="8"/>
+  <text x="330" y="480" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">⌚ Montre Connectée</text>
+  <text x="330" y="500" font-family="Arial" font-size="18" fill="#e74c3c" font-weight="bold">299.99 €</text>
+  <rect x="330" y="510" width="80" height="20" fill="#3498db" rx="10"/>
+  <text x="370" y="523" font-family="Arial" font-size="11" fill="white" text-anchor="middle">Électronique</text>
+  <rect x="330" y="550" width="80" height="30" fill="#f39c12" rx="5"/>
+  <text x="370" y="568" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Modifier</text>
+  <rect x="420" y="550" width="80" height="30" fill="#e74c3c" rx="5"/>
+  <text x="460" y="568" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Supprimer</text>
+</svg>
