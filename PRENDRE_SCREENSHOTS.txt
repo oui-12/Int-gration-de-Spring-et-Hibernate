@@ -1,0 +1,70 @@
+╔══════════════════════════════════════════════════════════════════╗
+║         GUIDE RAPIDE - CAPTURES D'ÉCRAN (2 MINUTES)              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📸 4 CAPTURES À PRENDRE :
+
+┌────────────────────────────────────────────────────────────────┐
+│ CAPTURE 1 : Page d'accueil                                     │
+├────────────────────────────────────────────────────────────────┤
+│ 1. Ouvrez : demo-static/index.html (déjà ouvert !)             │
+│ 2. Appuyez : Windows + Shift + S                               │
+│ 3. Sélectionnez toute la page visible                          │
+│ 4. Ouvrez Paint (Windows + R → mspaint → Entrée)               │
+│ 5. Collez : Ctrl + V                                           │
+│ 6. Enregistrez : Fichier → Enregistrer sous                    │
+│    Nom : home.png                                              │
+│    Où : screenshots\                                           │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│ CAPTURE 2 : Liste des produits                                │
+├────────────────────────────────────────────────────────────────┤
+│ 1. Cliquez sur "Voir les Produits" (page déjà ouverte)        │
+│ 2. Windows + Shift + S                                         │
+│ 3. Sélectionnez toute la page                                 │
+│ 4. Collez dans Paint                                           │
+│ 5. Enregistrez : products.png dans screenshots\               │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│ CAPTURE 3 : Liste des catégories                              │
+├────────────────────────────────────────────────────────────────┤
+│ 1. Cliquez sur "Catégories" (page déjà ouverte)               │
+│ 2. Windows + Shift + S                                         │
+│ 3. Sélectionnez toute la page                                 │
+│ 4. Collez dans Paint                                           │
+│ 5. Enregistrez : categories.png dans screenshots\             │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────┐
+│ CAPTURE 4 : Formulaire produit                                │
+├────────────────────────────────────────────────────────────────┤
+│ 1. Page product-form.html (déjà ouverte)                       │
+│ 2. Windows + Shift + S                                         │
+│ 3. Sélectionnez toute la page                                 │
+│ 4. Collez dans Paint                                           │
+│ 5. Enregistrez : product-form.png dans screenshots\           │
+└────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════╗
+║  APRÈS LES 4 CAPTURES, EXÉCUTEZ CES COMMANDES :                 ║
+╚══════════════════════════════════════════════════════════════════╝
+
+git add screenshots/
+git add README.md GUIDE_SCREENSHOTS.md open-all-pages.bat PRENDRE_SCREENSHOTS.txt
+git commit -m "docs: ajout des captures d'écran de l'interface"
+git push origin main
+
+╔══════════════════════════════════════════════════════════════════╗
+║  C'EST TERMINÉ ! Les photos seront sur GitHub ! 🎉               ║
+╚══════════════════════════════════════════════════════════════════╝
+
+💡 RACCOURCI CLAVIER WINDOWS :
+Windows + Shift + S = Outil de capture rapide
+Ctrl + V = Coller dans Paint
+Ctrl + S = Enregistrer
+
+📁 DOSSIER DESTINATION :
+C:\Users\ElKansouli Ouiam\Desktop\spring-hibernate-demo\screenshots\
+

@@ -118,6 +118,32 @@ mvn test
 
 ---
 
+## 📸 Captures d'écran
+
+### Page d'accueil
+![Page d'accueil](screenshots/home.png)
+
+Design moderne avec gradient violet/bleu, cartes de fonctionnalités et navigation intuitive.
+
+### Liste des produits
+![Liste des produits](screenshots/products.png)
+
+Affichage en grille avec cartes produits, prix, catégories et boutons d'action.
+
+### Liste des catégories
+![Liste des catégories](screenshots/categories.png)
+
+Gestion des catégories avec statistiques et actions CRUD complètes.
+
+### Formulaire d'ajout
+![Formulaire produit](screenshots/product-form.png)
+
+Formulaire élégant avec validation et sélection de catégorie.
+
+> 💡 **Pour voir l'interface maintenant :** Ouvrez `demo-static/index.html` dans votre navigateur !
+
+---
+
 ## 📁 Structure du projet
 
 ```
